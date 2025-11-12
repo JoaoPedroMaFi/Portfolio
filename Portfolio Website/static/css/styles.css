@@ -1,0 +1,14 @@
+/* Aplica overflow no SVG para garantir que o conteúdo não ultrapasse suas bordas */
+svg {
+    overflow: hidden;
+}
+
+/* Efetuar transições e zoom na imagem dentro do SVG */
+.expand-image {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.expand-image:hover {
+    transform: scale(1.2); /* Expande a imagem ao passar o mouse */
+}

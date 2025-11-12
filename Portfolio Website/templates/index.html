@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 mt-5 rounded text-body-emphasis bg-info">
+   <div class="row">
+  <div class="col-lg-8 px-0">
+    <h1 class="display-5 fst">João Pedro Marques Figueiredo</h1>
+    <p class="lead my-3">Software Engineer</p>
+    <p class="lead mb-0"><a href="#" class="text-primary fw-bold">LinkedIn...</a></p>
+  </div>
+  <div class="col-lg-4 px-0 d-flex justify-content-end align-items-center">
+    <img class="img-fluid expand-image" width="200px" height="200px" src="{{ url_for('static', filename='images/Joao.png') }}" alt="João Pedro Marques Figueiredo">
+  </div>
+</div>
+  </div>
+
+
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis"></strong>
+          <h3 class="mb-0">Text to Code Morse converter</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <p class="card-text mb-auto">This small application converts text into Morse code and then plays back the inserted text in sound form. </p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            See code
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg  width="200" height="250" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <!-- Elemento rect para definir a área do fundo -->
+            <rect width="100%" height="100%" fill="none" stroke="#dee2e6" stroke-width="2" />
+            <!-- Inserção da imagem dentro do SVG -->
+            <image class="expand-image" href="{{ url_for('static', filename='images/code_morse.png') }}" width="100%" height="100%" />
+            <!-- Texto centralizado sobre a imagem -->
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle"></text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis"></strong>
+          <h3 class="mb-0">EuroMillions</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <p class="mb-auto">This little application scraps all the EuroMillions draws from a website, then shows the five numbers that have come up most often and their stars, and also allows you to generate random keys and send them by email.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            See code
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true">
+            <title>Placeholder</title>
+            <!-- Elemento rect para definir a área do fundo -->
+            <rect width="100%" height="100%" fill="none" stroke="#dee2e6" stroke-width="2" />
+            <!-- Inserção da imagem dentro do SVG -->
+            <image href="{{ url_for('static', filename='images/euromillions.png') }}" width="100%" height="100%" />
+            <!-- Texto centralizado sobre a imagem -->
+            <text x="50%" y="50%" fill="#eceeef" dy=".3em" text-anchor="middle"></text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+
+{% endblock %}
